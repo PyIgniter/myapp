@@ -2,7 +2,7 @@
 ssh root@u1804 <<EOF
  cd ~/projects/myapp
  git pull
- npm install — production
+ npm install --production
  pm2 restart all
  exit
 EOF
