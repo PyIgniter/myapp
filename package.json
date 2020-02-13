@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo Test !!!"
+    "start": "echo 'NODE_PATH=src/ HTTPS=true node scripts/start.js'",
+    "build":"echo 'hello build'",
+    "postbuild": "echo 'cp -r locales/ build/'",
+    "test": "echo 'hello Test'",
+    "makemessages": "echo 'i18next \"src/**/*.{js,jsx}\" -c config/i18next-parser.config.js\n'"
   },
   "author": "Andrii",
   "license": "ISC",
@@ -12,3 +16,6 @@
     "express": "^4.17.1"
   }
 }
+
+
+
