@@ -22,7 +22,7 @@ pipeline {
      
     stage('Build') {
       steps {
-          sh 'npm install — production'
+          sh 'npm install --production'
       }
     }
     stage('Deploy') { 
